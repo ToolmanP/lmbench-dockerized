@@ -17,6 +17,7 @@
  */
 char	*id = "$Id$\n";
 #include "bench.h"
+#include <string.h>
 
 void	client_main(int ac, char **av);
 void	server_main();
