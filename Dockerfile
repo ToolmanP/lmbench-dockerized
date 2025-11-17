@@ -1,6 +1,8 @@
 FROM toolmanp/ubuntu:22.04-zpoline
 
-RUN apk update && apk upgrade && apk add --no-cache build-base bash perl libtirpc-dev
+RUN apt update && apt upgrade -y
+RUN apt install build-essential libtirpc-dev -y
+RUN apt clean
 
 WORKDIR /app
 ADD . .
